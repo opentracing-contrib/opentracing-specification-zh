@@ -3,6 +3,7 @@
 OpenTracing标准官方页面为：[http://opentracing.io/spec](http://opentracing.io/spec).
 
 译者：[吴晟](https://github.com/wu-sheng)
+
 译者注：作为OpenTracing的主要成员，为了OpenTracing标准的推广，通过[opentracing-contrib/opentracing-specification-zh](https://github.com/opentracing-contrib/opentracing-specification-zh)提供OpenTracing标准的中文译本。
 
 ## OpenTracing v1.0
