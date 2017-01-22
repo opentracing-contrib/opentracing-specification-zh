@@ -11,8 +11,8 @@ OpenTracing标准官方页面为：[http://opentracing.io/spec](http://opentraci
 ## OpenTracing v1.0
 此版本为OpenTracing的第一个发布版本，标准包含两个部分：
 
-1. [`specification.md`](), OpenTracing标准正本
-1. [`data_conventions.yaml`](), 基于YAML格式的文件，描述Span的Tag和Log操作时，所使用的通用键值
+1. [`specification.md`](specification.md), OpenTracing标准正本
+1. [`data_conventions.yaml`](data_conventions.yaml), 基于YAML格式的文件，描述Span的Tag和Log操作时，所使用的通用键值
 
 <br/>
 <br/>
