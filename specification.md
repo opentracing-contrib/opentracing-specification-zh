@@ -8,15 +8,15 @@
 
 ### 版本命名策略
 
-OpenTracing标准使用`Major.Minor`版本命名策略（即：大版本.小版本），但不包含`.Patch`版本（即：补丁版本）。如果标准做出不向前兼容的改变，则使用“主版本”号提升。如果是向前兼容的改进，则进行小版本号提升，例如加入新的标准tag,log和SpanContext引用类型。（如果你想知道更多关于制定此版本政策的原因，可参考[specification#2](https://github.com/opentracing/specification/issues/2#issuecomment-261740811)）
+OpenTracing标准使用`Major.Minor`版本命名策略（即：大版本.小版本），但不包含`.Patch`版本（即：补丁版本）。如果标准做出不向前兼容的改变，则使用“主版本”号提升。如果是向前兼容的改进，则进行小版本号提升，例如加入新的标准tag, log和SpanContext引用类型。（如果你想知道更多关于制定此版本政策的原因，可参考[specification#2](https://github.com/opentracing/specification/issues/2#issuecomment-261740811)）
 
 ## OpenTracing数据模型
 
-OpenTracing中的**Trace**（调用链）通过归属于此调用链的**Spans**来隐性的定义。
+OpenTracing中的**Trace**（调用链）通过归属于此调用链的**Span**来隐性的定义。
 特别说明，一条**Trace**（调用链）可以被认为是一个由多个**Span**组成的有向无环图（DAG图），
 **Span**与**Span**的关系被命名为**References**。
 
-__译者注: Span，可以被翻译为跨度，可以被理解为一次方法调用, 一个程序块的调用, 或者一次RPC/数据库访问.主要是一个具有完整时间周期的程序访问，都可以被认为是一个span.在此译本中，为了便于理解，Span和其他标准内声明的词汇，全部不做名词翻译。__
+__译者注: Span，可以被翻译为跨度，可以被理解为一次方法调用, 一个程序块的调用, 或者一次RPC/数据库访问.只要是一个具有完整时间周期的程序访问，都可以被认为是一个span.在此译本中，为了便于理解，Span和其他标准内声明的词汇，全部不做名词翻译。__
 
 例如：下面的示例**Trace**就是由8个**Span**组成：
 
