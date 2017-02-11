@@ -1,11 +1,11 @@
 # 此文件描述了Span的tag和log键的标准取值，以及相关约定
-# 
+#
 # OpenTracing API可以解析这份文件，生成相应的文件和注释。
 #
 # 修改这份文件会影响OpenTracing标准的版本号。
 # 增加内容会引起小版本号增加，无法向前兼容的修改（或者大批量的增加）应该增加大版本号。
 #
-# 译者注：考虑到此文件内容中大量的英语单词为行业标准词汇，不对内容进行直接翻译
+# 译者注：考虑到此文件内容中大量的英语单词为行业标准词汇，只会对其中较为复杂的说明进行翻译
 
 
 standard_tags:
@@ -57,32 +57,32 @@ standard_tags:
         type: string
         comment: 'Either "client" or "server" for the appropriate roles in an RPC'
         examples: '"client", "server"'
- 
+
     'peer.hostname':
         type: string
         comment: 'Remote hostname'
         examples: '"opentracing.io", "internal.dns.name"'
- 
+
     'peer.ipv4':
         type: string
         comment: 'Remote IPv4 address as a .-separated tuple'
         examples: '"127.0.0.1"'
- 
+
     'peer.ipv6':
         type: string
         comment: 'Remote IPv6 address as a string of colon-separated 4-char hex tuples'
         examples: '"2001:0db8:85a3:0000:0000:8a2e:0370:7334"'
- 
+
     'peer.port':
         type: integer
         comment: 'Remote port'
         examples: '80'
- 
+
     'peer.service':
         type: string
         comment: 'Remote service name (for some unspecified definition of "service")'
         examples: '"elasticsearch", "a_custom_microservice", "memcache"'
- 
+
 standard_log_fields:
     'event':
         type: string
