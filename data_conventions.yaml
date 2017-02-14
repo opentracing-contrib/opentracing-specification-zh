@@ -1,11 +1,11 @@
-# 此文件描述了Span的tag和log键的标准取值，以及相关约定
+# This file describes standards and conventions for Span tags and log fields.
 #
-# OpenTracing API可以解析这份文件，生成相应的文件和注释。
+# OpenTracing APIs can parse this file programmatically to generate
+# documentation (and comments) as they see fit.
 #
-# 修改这份文件会影响OpenTracing标准的版本号。
-# 增加内容会引起小版本号增加，无法向前兼容的修改（或者大批量的增加）应该增加大版本号。
-#
-# 译者注：考虑到此文件内容中大量的英语单词为行业标准词汇，不对内容进行直接翻译
+# Changes to this file affect the OpenTracing specification version. Additions
+# should always bump the minor version, and backwards-incompatible changes (or
+# perhaps very large additions) should bump the major version.
 
 standard_tags:
 
@@ -123,7 +123,7 @@ standard_log_fields:
 
     'error.object':
         type: object
-        comment: 'For languages that suppor such a thing (e.g., Java, Python), the actual Throwable/Exception/Error object instance itself.'
+        comment: 'For languages that support such a thing (e.g., Java, Python), the actual Throwable/Exception/Error object instance itself.'
         examples: 'A java.lang.UnsupportedOperationException instance, a python exceptions.NameError instance'
 
     'error.kind':
