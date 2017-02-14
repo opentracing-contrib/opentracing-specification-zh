@@ -1,11 +1,12 @@
-# This file describes standards and conventions for Span tags and log fields.
+# 此文件描述了Span的tag和log键的标准取值，以及相关约定
 #
-# OpenTracing APIs can parse this file programmatically to generate
-# documentation (and comments) as they see fit.
+# OpenTracing API可以解析这份文件，生成相应的文件和注释。
 #
-# Changes to this file affect the OpenTracing specification version. Additions
-# should always bump the minor version, and backwards-incompatible changes (or
-# perhaps very large additions) should bump the major version.
+# 修改这份文件会影响OpenTracing标准的版本号。
+# 增加内容会引起小版本号增加，无法向前兼容的修改（或者大批量的增加）应该增加大版本号。
+#
+# 译者注：考虑到此文件内容中大量的英语单词为行业标准词汇，只会对其中较为复杂的说明进行翻译
+
 
 standard_tags:
 
