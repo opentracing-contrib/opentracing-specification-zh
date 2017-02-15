@@ -101,25 +101,22 @@ standard_log_fields:
 
 
     ###########################################################################
-    # SPECIFYING ERRORS
+    # 错误信息说明
     #
-    # Errors may be reported to OpenTracing in different ways, largely
-    # depending on the language. Some of the fields are specific to errors;
-    # others are not (e.g., the `event` field, or the `message` field).
+    # 根据语言不同，向OpenTracing报告错误的方式也有所区别。
+    # 某些字段是专门针对上报错误的，有一些字段（如`event`, `message`）则不是。
     #
-    # For languages where an error object encapsulates a stack trace and type
-    # information, log the following fields:
+    # 如果该语言的error对象包含栈信息和错误类型，则log操作中，使用使用以下字段：
     #  - event="error"
     #  - error.object=<error object instance>
     #
-    # For other languages, or when above is not feasible:
+    # 如果不存在这种类型的对象，或无法构建这样的对象，则log操作中，使用使用以下字段：
     #  - event="error"
     #  - message="..."
     #  - stack="..." (optional)
     #  - error.kind="..." (optional)
     #
-    # This scheme allows Tracer implementations to extract what information
-    # they need from the actual error object when it's available.
+    # 通过这种模式，保证Tracer可以在错误发生后，通过统一的方式，获取这些错误信息。
     ###########################################################################
 
     'error.object':
