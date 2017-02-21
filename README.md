@@ -10,6 +10,8 @@ OpenTracing标准官方页面为：[http://opentracing.io/spec](http://opentraci
 
 此GitHub项目仅用于译本的提供，如果大家有任何关于规范的问题，并习惯使用英语，建议前往官方讨论区 [opentracing/specification](https://github.com/opentracing/specification)。如果需要使用中文交流，也欢迎在此项目，通过issue的方式沟通。
 
+最后更新时间: [Feb 15, 2017](https://github.com/opentracing/specification/commits/master)
+
 ## OpenTracing v1.0
 此版本为OpenTracing的第一个发布版本，标准包含两个部分：
 
