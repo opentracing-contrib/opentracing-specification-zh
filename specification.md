@@ -201,7 +201,7 @@ Inject（注入）和Extract（提取）依赖于可扩展的**format**参数。
 - tag key，必须是string类型
 - tag value，类型为字符串，布尔或者数字
 
-注意，OpenTracing标准包含**["standard tags，标准Tag"](data_conventions.yaml)**，此文档中定义了Tag的标准含义。
+注意，OpenTracing标准包含**["standard tags，标准Tag"](./semantic_conventions.md)**，此文档中定义了Tag的标准含义。
 
 #### Log结构化数据
 
@@ -213,7 +213,7 @@ Inject（注入）和Extract（提取）依赖于可扩展的**format**参数。
 
 - 一个明确的时间戳。如果指定时间戳，那么它必须在span的开始和结束时间之内。
 
-注意，OpenTracing标准包含**["standard log keys，标准log的键"](data_conventions.yaml)**，此文档中定义了这些键的标准含义。
+注意，OpenTracing标准包含**["standard log keys，标准log的键"](./semantic_conventions.md)**，此文档中定义了这些键的标准含义。
 
 #### 设置一个**baggage**（随行数据）元素
 

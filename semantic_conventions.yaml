@@ -1,0 +1,32 @@
+# 此文件描述了Span的tag和log操作的标准以及惯例
+#
+# 详细的使用方法可参考./semantic_conventions.md文件中的描述。
+#
+# 修改这份文件会影响OpenTracing标准的版本号。
+# 增加内容会引起小版本号增加，无法向前兼容的修改（或者大批量的增加）应该增加大版本号。
+
+
+standard_tags:
+    'component': string
+    'error': bool
+    'http.method': string
+    'http.status_code': integer
+    'http.url': string
+    'peer.hostname': string
+    'peer.ipv4': string
+    'peer.ipv6': string
+    'peer.port': integer
+    'peer.service': string
+    'sampling.priority': integer
+    'span.kind': string
+    'db.type': string
+    'db.instance': string
+    'db.user': string
+    'db.statement': string
+
+standard_log_fields:
+    'event': string
+    'message': string
+    'stack': string
+    'error.object': object
+    'error.kind': string

@@ -10,13 +10,13 @@ OpenTracing标准官方页面为：[http://opentracing.io/spec](http://opentraci
 
 此GitHub项目仅用于译本的提供，如果大家有任何关于规范的问题，并习惯使用英语，建议前往官方讨论区 [opentracing/specification](https://github.com/opentracing/specification)。如果需要使用中文交流，也欢迎在此项目，通过issue的方式沟通。
 
-最后更新时间: [Feb 24, 2017](https://github.com/opentracing/specification/commits/master)
+最后更新时间: [Mar 1, 2017](https://github.com/opentracing/specification/commits/master)
 
 ## OpenTracing v1.0
 此版本为OpenTracing的第一个发布版本，标准包含两个部分：
 
-1. [`specification.md`](specification.md), OpenTracing标准正本
-1. [`data_conventions.yaml`](data_conventions.yaml), 基于YAML格式的文件，描述Span的Tag和Log操作时，所使用的通用键值
+1. [`specification.md`](./specification.md), OpenTracing标准正本
+1. [`semantic_conventions.md`](./semantic_conventions.md), 该文档描述，在常见场景下，Span进行tag、log操作时，key的使用习惯。
 
 <br/>
 <br/>
