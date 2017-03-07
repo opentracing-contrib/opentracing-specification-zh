@@ -1,6 +1,6 @@
 ### OpenTracing
 
-译者注： 2017 Google Summer of Code 活动已经启动了，参与地址为https://developers.google.com/open-source/gsoc/ 。CNCF基金会成是该项目的201个参与组织之一，而OpenTracing作为CNCF的重要项目，也提供了相关的项目课题。欢迎大家参与。
+译者注： 2017 Google Summer of Code 活动已经启动了，参与地址为https://developers.google.com/open-source/gsoc/ 。CNCF基金会是该项目的201个参与组织之一，而OpenTracing作为CNCF的重要项目，也提供了相关的项目课题。欢迎大家参与。
 
 [OpenTracing](http://opentracing.io/) is an open standard for distributed tracing. A trace tells the story of a transaction or workflow as it propagates through a (potentially distributed) system. OpenTracing makes it easy for developers to add (or switch) tracing implementations, by offering a vendor-neutral APIs that popular platforms can bind to.
 
