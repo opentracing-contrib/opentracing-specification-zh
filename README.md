@@ -18,6 +18,8 @@ OpenTracing标准官方页面为：[http://opentracing.io/spec](http://opentraci
 1. [`specification.md`](./specification.md), OpenTracing标准正本
 1. [`semantic_conventions.md`](./semantic_conventions.md), 该文档描述，在常见场景下，Span进行tag、log操作时，key的使用习惯。
 
+## News
+- [CNCF OpenTracing GSoC 2017](./soc/OpenTracing-2017.md) Google 2017编程夏令营
 <br/>
 <br/>
 <br/>
