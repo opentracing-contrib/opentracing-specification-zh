@@ -20,6 +20,7 @@ OpenTracing标准官方页面为：[http://opentracing.io/spec](http://opentraci
 
 ## News
 - [CNCF OpenTracing GSoC 2017](./GSoC/OpenTracing-2017.md) Google 2017编程夏令营
+
 <br/>
 <br/>
 <br/>
