@@ -25,13 +25,14 @@ Span的tag作用于 **整个Span**，也就是说，它会覆盖Span的整个事
 | `http.method` | string | Span相关的HTTP请求方法。例如 `"GET"`, `"POST"` |
 | `http.status_code` | integer | Span相关的HTTP返回码。例如 200, 503, 404 |
 | `http.url` | string | 被处理的trace片段锁对应的请求URL。 例如 `"https://domain.net/path/to?resource=here"` |
++| `message_bus.destination` | string | 消息投递或交换的地址。例如，在Kafka中，在生产者或消费者两端，可以使用此tag来存储`"topic name"`。|
 | `peer.hostname` | string | 远端主机名。例如 `"opentracing.io"`, `"internal.dns.name"` |
 | `peer.ipv4` | string | 远端 IPv4 地址，使用 `.` 分隔。例如 `"127.0.0.1"` |
 | `peer.ipv6` | string | 远程 IPv6 地址，使用冒号分隔的元祖，每个元素为4位16进制数。例如 `"2001:0db8:85a3:0000:0000:8a2e:0370:7334"` |
 | `peer.port` | integer | 远程端口。如 `80` |
 | `peer.service` | string | 远程服务名（针对没有被标准化定义的`"service"`）。例如 `"elasticsearch"`, `"a_custom_microservice"`, `"memcache"` |
 | `sampling.priority` | integer | 如果大于0，Tracer实现应该尽可能捕捉这个调用链。如果等于0，则表示不需要捕捉此调用链。如不存在，Tracer使用自己默认的采样机制。|
-| `span.kind` | string | RPC调用中的角色，`"client"` 或 `"server"`. |
+| `span.kind` | string | 基于RPC的调用角色，`"client"` 或 `"server"`. 基于消息的调用角色，`"producer"` 或 `"consumer"`|
 
 ### Log field 清单
 
@@ -54,6 +55,16 @@ Span的tag作用于 **整个Span**，也就是说，它会覆盖Span的整个事
 - `span.kind`: `"client"` 或 `"server"`。**在Span开始时**，设置此tag是十分重要的，它可能影响内部ID的生成。
 - `error`: RPC调用是否发生错误
 - `peer.hostname`, `peer.ipv4`, `peer.ipv6`, `peer.port`, `peer.service`: 可选tag。描述RPC的对端信息。（一般只有在无法获取到这些信息时，才不设置这些值）
+
+### Message Bus
+
+消息服务是一个异步调用，所以消费端的Span和生产端的Span使用 **Follows From** 关系。(查看 [Span间关系](./specification.md#references-between-spans))
+
+使用下面tag为消息服务建模：
+
+- `message_bus.destination`: 上表已描述
+- `span.kind`: `"producer"` 或 `"consumer"`. 建议 **在span开始时** 设置此tag，它可能影响内部ID的生成。
+- `peer.hostname`, `peer.ipv4`, `peer.ipv6`, `peer.port`, `peer.service`: 可选tag，描述消息服务中broker的地址。（可能在内部无法获取）
 
 ### Database (client) calls
 

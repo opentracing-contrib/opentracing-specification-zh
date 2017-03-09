@@ -5,13 +5,17 @@
 # 修改这份文件会影响OpenTracing标准的版本号。
 # 增加内容会引起小版本号增加，无法向前兼容的修改（或者大批量的增加）应该增加大版本号。
 
-
 standard_tags:
     'component': string
+    'db.instance': string
+    'db.statement': string
+    'db.type': string
+    'db.user': string
     'error': bool
     'http.method': string
     'http.status_code': integer
     'http.url': string
+    'message_bus.destination': string
     'peer.hostname': string
     'peer.ipv4': string
     'peer.ipv6': string
@@ -19,14 +23,10 @@ standard_tags:
     'peer.service': string
     'sampling.priority': integer
     'span.kind': string
-    'db.type': string
-    'db.instance': string
-    'db.user': string
-    'db.statement': string
 
 standard_log_fields:
+    'error.kind': string
+    'error.object': object
     'event': string
     'message': string
     'stack': string
-    'error.object': object
-    'error.kind': string
