@@ -26,4 +26,5 @@ OpenTracing标准官方页面为：[http://opentracing.io/spec](http://opentraci
 <br/>
 <br/>
 ___
+
 _基于"OpenTracing官方标准"发布途径等历史原因, 原有1.0翻译版本通过翻译opentracing.io提供, [网页地址](http://opentracing.io/documentation/pages/translations.html), [下载地址](https://www.gitbook.com/download/pdf/book/wu-sheng/opentracing-io)._
