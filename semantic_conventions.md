@@ -18,7 +18,7 @@ Span的tag作用于 **整个Span**，也就是说，它会覆盖Span的整个事
 |:--------------|:-----|:-------------------|
 | `component` | string  | 生成此Span所相关的软件包，框架，类库或模块。如 `"grpc"`, `"django"`, `"JDBI"`. |
 | `db.instance` | string | 数据库实例名称。以Java为例，如果 jdbc.url=`"jdbc:mysql://127.0.0.1:3306/customers"`，实例名为 `"customers"`. |
-| `db.statement` | string | 一个针对给定数据库类型的数据库访问语句。例如， 针对数据库类型 `db.type="SQL"`，语句可能是 `"SELECT * FROM wuser_table"`; 针对数据库类型为 `db.type="redis"`，语句可能是 `"SET mykey 'WuValue'"`. |
+| `db.statement` | string | 一个针对给定数据库类型的数据库访问语句。例如， 针对数据库类型 `db.type="sql"`，语句可能是 `"SELECT * FROM wuser_table"`; 针对数据库类型为 `db.type="redis"`，语句可能是 `"SET mykey 'WuValue'"`. |
 | `db.type` | string | 数据库类型。对于任何支持SQL的数据库，取值为 `"sql"`. 否则，使用小写的数据类型名称，如 `"cassandra"`, `"hbase"`, or `"redis"`. |
 | `db.user` | string | 访问数据库的用户名。如 `"readonly_user"` 或 `"reporting_user"` |
 | `error` | bool | 设置为`true`，说明整个Span失败。译者注：Span内发生异常不等于error=true，这里由被监控的应用系统决定 |
