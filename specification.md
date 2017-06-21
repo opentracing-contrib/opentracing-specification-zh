@@ -97,7 +97,7 @@ __译者注: Span，可以被翻译为跨度，可以被理解为一次方法调
          [-Child Span E----]
 ~~~
 
-**`FollowsFrom` 引用:** 一些父级节点不以任何方式依然他们子节点的执行结果，这种情况下，我们说这些子span和父span之间是"FollowsFrom"的因果关系。"FollowsFrom"关系可以被分为很多不同的子类型，未来版本的OpenTracing中将正式的区分这些类型
+**`FollowsFrom` 引用:** 一些父级节点不以任何方式依赖他们子节点的执行结果，这种情况下，我们说这些子span和父span之间是"FollowsFrom"的因果关系。"FollowsFrom"关系可以被分为很多不同的子类型，未来版本的OpenTracing中将正式的区分这些类型
 
 下面都是合理的表述一个"FollowFrom"关系的父子节点关系的时序图。
 
