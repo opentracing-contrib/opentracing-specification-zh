@@ -68,7 +68,7 @@ __译者注: Span，可以被翻译为跨度，可以被理解为一次方法调
 - **SpanContext**，Span上下文对象 (下面会详细说明)
 - **References**(Span间关系)，相关的零个或者多个Span（**Span**间通过**SpanContext**建立这种关系）
 
-每一个**SpanContext**包含一下状态：
+每一个**SpanContext**包含以下状态：
 
 - 任何一个OpenTracing的实现，都需要将当前调用链的状态（例如：trace和span的id），依赖一个独特的Span去跨进程边界传输
 - **Baggage Items**，Trace的随行数据，是一个键值对集合，它存在于trace中，也需要跨进程边界传输
