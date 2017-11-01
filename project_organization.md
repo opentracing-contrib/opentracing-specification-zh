@@ -12,11 +12,12 @@ OpenTracing's project organization makes room for each of these constituencies.
 
 The authors of any tracing or observability tool that supports OpenTracing are **always** invited to contribute to discussions about the future of OpenTracing as a standard. OpenTracing endeavors to maintain a list of such authors and will occasionally solicit feedback from that group.
 
-A subset of these tracing system authors are part of the **OpenTracing Specification Council** (OTSC). Said council members have write access across the [github.com/opentracing](https://github.com/opentracing) and [github.com/opentracing-contrib](https://github.com/opentracing-contrib) organizations (though other individuals may also have write access to specific repos within those organizations). Each OTSC member represents a tracing system which (a) maintains a public OpenTracing implementation, and (b) has substantial institutional support, and thus longevity. The current OpenTracing Specification Council is as follows (in alphabetical order):
+A subset of these tracing system authors are part of the **OpenTracing Specification Council** (OTSC). Said council members have write access across the [github.com/opentracing](https://github.com/opentracing) and [github.com/opentracing-contrib](https://github.com/opentracing-contrib) organizations (though other individuals may also have write access to specific repos within those organizations). Each OTSC member represents a tracing system which (a) maintains a public OpenTracing implementation, and (b) has substantial institutional support, and thus longevity. The current OpenTracing Specification Council is as follows (in alphabetical order by username):
 
 - Bas van Beek ([@basvanbeek](https://github.com/basvanbeek)): Zipkin
 - Ben Sigelman ([@bhs](https://github.com/bensigelman)): LightStep
 - Chris Erway ([@cce](https://github.com/cce)): TraceView
+- Erika Arnold ([@erabug](https://github.com/erabug)): New Relic
 - Pavol Loffay ([@pavolloffay](https://github.com/pavolloffay)): Hawkular
 - Yuri Shkuro ([@yurishkuro](https://github.com/yurishkuro)): Jaeger
 
@@ -60,3 +61,4 @@ Repositories under [github.com/opentracing-contrib](https://github.com/opentraci
 Sometimes formal governance and acronyms like "OTSC" or "OTIAB" signify hierarchy and exclusion in an open-source effort. The intention with OpenTracing's organization is to do exactly the opposite: by guaranteeing participation from multiple constituencies and multiple software projects and organizations, these simple governance structures aim to bring more ideas to the table. Inasmuch as it's possible, all OpenTracing discussions will take place out in the open and/or at clearly-advertised times and (virtual) places.
 
 If you would like to take on a more formal role on the OTSC or OTIAB, please reach out to an existing OTSC member and we can take it from there.
+
