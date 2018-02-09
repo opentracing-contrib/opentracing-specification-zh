@@ -4,13 +4,13 @@ OpenTracing标准官方页面为：[http://opentracing.io/spec](http://opentraci
 
 译者：[吴晟](https://github.com/wu-sheng)
 
-译者注：作为OpenTracing和OTIAB的成员，为了OpenTracing标准的推广，通过[opentracing-contrib/opentracing-specification-zh](https://github.com/opentracing-contrib/opentracing-specification-zh)提供OpenTracing标准的中文译本。
+译者注：作为OpenTracing的核心成员，为了OpenTracing标准的推广，通过[opentracing-contrib/opentracing-specification-zh](https://github.com/opentracing-contrib/opentracing-specification-zh)提供OpenTracing标准的中文译本。
 
 译本版本说明：格式 Major.Mini.Fix，前两位是对应的OpenTracing Spec版本号，第三位是翻译修复版本。
 
 此GitHub项目仅用于译本的提供，如果大家有任何关于规范的问题，并习惯使用英语，建议前往官方讨论区 [opentracing/specification](https://github.com/opentracing/specification)。如果需要使用中文交流，也欢迎在此项目，通过issue的方式沟通。
 
-最后更新时间: [Jan 21, 2018](https://github.com/opentracing/specification/commits/master)
+最后更新时间: [Feb 9, 2018](https://github.com/opentracing/specification/commits/master)
 
 ## OpenTracing v1.1
 OpenTracing标准包含两个部分：
