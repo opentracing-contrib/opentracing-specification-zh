@@ -175,7 +175,7 @@ Inject（注入）和Extract（提取）依赖于可扩展的**format**参数。
 
 当`Span`结束后(`span.finish()`)，除了通过`Span`获取`SpanContext`外，下列其他所有方法都不允许被调用。
 
-#### 除了通过`Span`获取`SpanContext`
+#### 获取`Span`的`SpanContext`
 
 不需要任何参数。
 
