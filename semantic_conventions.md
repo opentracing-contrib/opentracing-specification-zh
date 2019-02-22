@@ -29,7 +29,7 @@ Span的tag作用于 **整个Span**，也就是说，它会覆盖Span的整个事
 | `peer.address` | string | 远程地址。 适合在网络调用的客户端使用。存储的内容可能是`"ip:port"`， `"hostname"`，域名，甚至是一个JDBC的连接串，如 `"mysql://prod-db:3306"` |
 | `peer.hostname` | string | 远端主机名。例如 `"opentracing.io"`, `"internal.dns.name"` |
 | `peer.ipv4` | string | 远端 IPv4 地址，使用 `.` 分隔。例如 `"127.0.0.1"` |
-| `peer.ipv6` | string | 远程 IPv6 地址，使用冒号分隔的元祖，每个元素为4位16进制数。例如 `"2001:0db8:85a3:0000:0000:8a2e:0370:7334"` |
+| `peer.ipv6` | string | 远程 IPv6 地址，使用冒号分隔的元组，每个元素为4位16进制数。例如 `"2001:0db8:85a3:0000:0000:8a2e:0370:7334"` |
 | `peer.port` | integer | 远程端口。如 `80` |
 | `peer.service` | string | 远程服务名（针对没有被标准化定义的`"service"`）。例如 `"elasticsearch"`, `"a_custom_microservice"`, `"memcache"` |
 | `sampling.priority` | integer | 如果大于0，Tracer实现应该尽可能捕捉这个调用链。如果等于0，则表示不需要捕捉此调用链。如不存在，Tracer使用自己默认的采样机制。|
