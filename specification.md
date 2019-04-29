@@ -150,7 +150,7 @@ OpenTracing标准中有三个重要的相互关联的类型，分别是`Tracer`,
 
 必填参数
 
-- **`SpanContext`**实例
+- **`SpanContext`** 实例
 - **format**（格式化）描述，一般会是一个字符串常量，但不做强制要求。通过此描述，通知`Tracer`实现，如何对`SpanContext`进行编码放入到carrier中。
 - **carrier**，根据**format**确定。`Tracer`实现根据**format**声明的格式，将`SpanContext`序列化到carrier对象中。
 
