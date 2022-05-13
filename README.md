@@ -1,5 +1,7 @@
 # OpenTracing官方标准-中文版
 
+# The OpenTracing project is archived. 项目已归档，不再维护
+
 OpenTracing标准官方页面为：[http://opentracing.io/spec](http://opentracing.io/spec).
 
 译者：[吴晟](https://github.com/wu-sheng)
